@@ -1,17 +1,22 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Home",
-    page_icon=":house:",
+    page_title="About",
+    page_icon=":🧑‍💻",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
+
+Horizontal_Logo = "https://i.imgur.com/5byQTAD.png"
+Logo = "https://i.imgur.com/D65dp0H.png" ## Optional, use as logo
+
+st.logo(Horizontal_Logo, icon_image=Horizontal_Logo)
 
 st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://i.ibb.co/n8wH3zb/Background-Photo.png');
+        background-image: url('https://i.imgur.com/PxLFpST.png');
         background-size: cover;
         background-position: center;
     }
@@ -139,13 +144,13 @@ st.markdown(
 st.markdown(
     """
     <div class="header">
-            <img src="https://i.ibb.co/RcFqjzH/Logo.png" alt="Logo" border="0">
+            <img src="https://i.imgur.com/EyHUicZ.png" alt="Logo" border="0">
         </a>
         <div class="nav-buttons">
-            <a href="#">HOME</a>
-            <a href="#">CREATE</a>
-            <a href="#">VIEW</a>
-            <a href="#">ABOUT</a>
+            <a href="Home">HOME</a>
+            <a href="Create">CREATE</a>
+            <a href="View">VIEW</a>
+            <a href="About">ABOUT</a>
         </div>
     </div>
     """,
@@ -181,43 +186,71 @@ st.markdown(
 <div class="fade-in-image">
     <div class="developer-container">
         <div class="developer">
-            <img src="https://i.ibb.co/hVNJSd9/1.png" alt="1" border="0"></a>
+            <img src="https://i.imgur.com/aZm8Tr7.png" alt="1" border="0"></a>
             <div class="developer-name">Chynna Mae Doria</div>
             <div class="social-icons">
-                <a href="https://github.com"><img src="https://i.ibb.co/VN3T25C/github.png" alt="github" border="0"></a>
-                <a href="https://linkedin.com"><img src="https://i.ibb.co/Wv5tK5S/linkedin.png" alt="linkedin" border="0"></a>
-                <a href="mailto:john.doe@example.com"><img src="https://i.ibb.co/85kj9dx/email.png" alt="email" border="0"></a>
+                <a href="https://github.com/chynnadoria"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
+                <a href="https://www.linkedin.com/in/chynna-doria/"><img src="https://i.imgur.com/qLksoMA.png" alt="linkedin" border="0"></a>
+                <a href="mailto:chynnadoria18@gmail.com"><img src="https://i.imgur.com/YSfGBXl.png" alt="email" border="0"></a>
             </div>
         </div>
         <div class="developer">
-            <img src="https://i.ibb.co/WBwmXpb/2.png" alt="2" border="0"></a>
+            <img src=https://i.imgur.com/Go9xnjV.png" alt="2" border="0"></a>
             <div class="developer-name">John Lloyd Legaspi</div>
             <div class="social-icons">
-                <a href="https://github.com"><img src="https://i.ibb.co/VN3T25C/github.png" alt="github" border="0"></a>
-                <a href="https://linkedin.com"><img src="https://i.ibb.co/Wv5tK5S/linkedin.png" alt="linkedin" border="0"></a>
-                <a href="mailto:john.doe@example.com"><img src="https://i.ibb.co/85kj9dx/email.png" alt="email" border="0"></a>
+                <a href="https://github.com/lloydlegaspi"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
+                <a href="https://www.linkedin.com/in/john-lloyd-legaspi-80a0b1166"><img src="https://i.imgur.com/qLksoMA.png" alt="linkedin" border="0"></a>
+                <a href="mailto:jlloyd.legaspi@gmail.com"><img src="https://i.imgur.com/YSfGBXl.png" alt="email" border="0"></a>
             </div>
         </div>
         <div class="developer">
-            <img src="https://i.ibb.co/0BD47Zr/3.png" alt="3" border="0"></a>
+            <img src="https://i.imgur.com/NloCqoP.png" alt="3" border="0"></a>
             <div class="developer-name">Paul Angelo Macaraeg</div>
             <div class="social-icons">
-                <a href="https://github.com"><img src="https://i.ibb.co/VN3T25C/github.png" alt="github" border="0"></a>
-                <a href="https://linkedin.com"><img src="https://i.ibb.co/Wv5tK5S/linkedin.png" alt="linkedin" border="0"></a>
-                <a href="mailto:john.doe@example.com"><img src="https://i.ibb.co/85kj9dx/email.png" alt="email" border="0"></a>
+                <a href="https://github.com/PaullyMac"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
+                <a href="https://www.linkedin.com/in/paul-macaraeg"><img src="https://i.imgur.com/qLksoMA.png" alt="linkedin" border="0"></a>
+                <a href="mailto:paulmacaraeg24@example.com"><img src="https://i.imgur.com/YSfGBXl.png" alt="email" border="0"></a>
             </div>
         </div>
         <div class="developer">
-            <img src="https://i.ibb.co/6nfxfM9/4.png" alt="4" border="0"></a>
-            <div class="developer-name">Kyla Mae Valoria</div>
+            <img src="https://i.imgur.com/W5C37mJ.png" alt="4" border="0"></a>
+            <div class="developer-name">Kyla Mae<br>Valoria</div>
             <div class="social-icons">
-                <a href="https://github.com"><img src="https://i.ibb.co/VN3T25C/github.png" alt="github" border="0"></a>
-                <a href="https://linkedin.com"><img src="https://i.ibb.co/Wv5tK5S/linkedin.png" alt="linkedin" border="0"></a>
-                <a href="mailto:john.doe@example.com"><img src="https://i.ibb.co/85kj9dx/email.png" alt="email" border="0"></a>
+                <a href="https://github.com/kyvaloria"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
+                <a href="https://www.linkedin.com/in/kylamae-valoria/"><img src="https://i.imgur.com/qLksoMA.png" alt="linkedin" border="0"></a>
+                <a href="mailto:kyvaloria@gmail.com"><img src="https://i.imgur.com/YSfGBXl.png" alt="email" border="0"></a>
             </div>
         </div>
     </div>
 </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Footer styling with Streamlit
+st.markdown(
+    """
+    <style>
+    .footer {
+        background-color: #365486;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative; /* Ensure it is positioned relative to the content */
+        width: 100%; /* Adjust width based on the section's width */
+        left: 0; /* Ensure it starts from the leftmost edge */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Footer content
+st.markdown(
+    """
+    <div class="footer">
+        © 2024 Taskify. All Rights Reserved.
+    </div>
     """,
     unsafe_allow_html=True
 )

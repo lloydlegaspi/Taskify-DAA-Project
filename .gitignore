@@ -1,3 +1,13 @@
+Errors.docx
+Script.docx
+test.py
+
+static/
+safe/
+
+# Static assets
+static/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
