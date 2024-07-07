@@ -7,6 +7,11 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+Horizontal_Logo = "https://i.imgur.com/5byQTAD.png"
+Logo = "https://i.imgur.com/D65dp0H.png" ## Optional, use as logo
+
+st.logo(Horizontal_Logo, icon_image=Horizontal_Logo)
+
 st.markdown(
     """
     <style>
@@ -19,7 +24,7 @@ st.markdown(
         #stDecoration {display:none;}
 
     .stApp {
-        background-image: url('https://i.ibb.co/n8wH3zb/Background-Photo.png');
+        background-image: url('https://i.imgur.com/PxLFpST.png');
         background-size: cover;
         background-position: center;
     }
@@ -176,7 +181,7 @@ st.markdown(
     """
     <div class="header">
         <div class="header-left">
-            <img src="https://i.ibb.co/RcFqjzH/Logo.png" alt="Logo" border="0">
+            <img src="https://i.imgur.com/EyHUicZ.png" alt="Logo" border="0">
         </div>
         <div class="header-right">
             <div class="nav-buttons">
@@ -189,14 +194,14 @@ st.markdown(
     <div class="boxes-container">
         <div class="row">
             <div class="box">
-                <img src="https://i.ibb.co/s6jfR8j/1.png" alt="Box 1 Image">
+                <img src="https://i.imgur.com/vjYJBF9.png" alt="Box 1 Image">
                 <div class="box-content">
                     <h3>Time Management</h3>
                     <p>Allocate tasks within specified working hours to optimize scheduling and minimize overtime.</p>
                 </div>
             </div>
             <div class="box">
-                <img src="https://i.ibb.co/n7kZx1j/2.png" alt="Box 2 Image">
+                <img src="https://i.imgur.com/5v5oBb0.png" alt="Box 2 Image">
                 <div class="box-content">
                     <h3>Efficiency</h3>
                     <p>Prioritize tasks based on their importance and deadlines to maximize productivity.</p>
@@ -205,14 +210,14 @@ st.markdown(
         </div>
         <div class="row">
             <div class="box">
-                <img src="https://i.ibb.co/F3d9Rq4/3.png" alt="Box 3 Image">
+                <img src="https://i.imgur.com/ZZWAoSY.png" alt="Box 3 Image">
                 <div class="box-content">
                     <h3>Flexibility</h3>
                     <p>Allow for adjustments in task priorities based on changing circumstances or urgent requirements.</p>
                 </div>
             </div>
             <div class="box">
-                <img src="https://i.ibb.co/st7J2CT/4.png" alt="Box 4 Image">
+                <img src="https://i.imgur.com/3Bn2SUd.png" alt="Box 4 Image">
                 <div class="box-content">
                     <h3>ICS Integration</h3>
                     <p>Seamlessly exported as ics and can integrate with existing calendars to streamline task assignment and monitoring.</p>
@@ -223,3 +228,32 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+# Function to render footer
+def render_footer():
+    st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #365486;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer p {
+        margin: 0;
+    }
+    </style>
+    <div class="footer">
+        <p>&copy; 2024 Taskify. All rights reserved.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# Render footer
+render_footer()
