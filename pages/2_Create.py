@@ -97,10 +97,9 @@ st.markdown(
     <div class="header">
         <img src="https://i.imgur.com/EyHUicZ.png" alt="Logo" border="0">
         <div class="nav-buttons">
-            <a href="Home">HOME</a>
-            <a href="Create">CREATE</a>
-            <a href="View">VIEW</a>
-            <a href="About">ABOUT</a>
+            <a href="" target="_self">HOME</a>
+            <a href="Create" target="_self">CREATE</a>
+            <a href="About" target="_self">ABOUT</a>
         </div>
     </div>
     """,
@@ -188,7 +187,7 @@ def add_tasks():
     priority = container.selectbox('Priority Level', ['High', 'Medium', 'Low'], key='priority')
     duration = container.number_input('Duration (hours)', min_value=0.5, max_value=24.0, step=0.5, key='duration')
 
-    priority_map = {'High': 3, 'Medium': 2, 'Low': 1}
+    priority_map = {'High': 1, 'Medium': 2, 'Low': 3}
 
     if container.button('Add Task'):
         if not task_name or not due_date or not priority or not duration:
