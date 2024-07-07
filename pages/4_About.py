@@ -147,10 +147,10 @@ st.markdown(
             <img src="https://i.imgur.com/EyHUicZ.png" alt="Logo" border="0">
         </a>
         <div class="nav-buttons">
-            <a href="Home">HOME</a>
-            <a href="Create">CREATE</a>
-            <a href="View">VIEW</a>
-            <a href="About">ABOUT</a>
+            <a href="Home" target="_self">HOME</a>
+            <a href="Create" target="_self">CREATE</a>
+            <a href="View" target="_self">VIEW</a>
+            <a href="About" target="_self">ABOUT</a>
         </div>
     </div>
     """,

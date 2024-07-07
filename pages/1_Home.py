@@ -185,8 +185,8 @@ st.markdown(
         </div>
         <div class="header-right">
             <div class="nav-buttons">
-                <a href="Create">TRY NOW</a>
-                <a href="About">ABOUT</a>
+                <a href="Create" target="_self">TRY NOW</a>
+                <a href="About" target="_self">ABOUT</a>
             </div>
         </div>
     </div>

@@ -69,7 +69,7 @@ st.markdown("""
         .nav-buttons a:hover {
             background-color: #0097e6;
         }
-        .nav-buttons a:nth-child(3) {
+        .nav-buttons a:nth-child(2) {
             background-color: #7FC7D9;
         }
         .st-emotion-cache-ixecyn.e1f1d6gn0 {
@@ -86,10 +86,9 @@ st.markdown("""
     <div class="header">
         <img src="https://i.imgur.com/EyHUicZ.png" alt="Logo" border="0">
         <div class="nav-buttons">
-            <a href="Home">HOME</a>
-            <a href="Create">CREATE</a>
-            <a href="View">VIEW</a>
-            <a href="About">ABOUT</a>
+            <a href="Home" target="_self">HOME</a>
+            <a href="View" target="_self">VIEW</a>
+            <a href="About" target="_self">ABOUT</a>
         </div>
     </div>
 """, unsafe_allow_html=True)
@@ -101,7 +100,7 @@ def view_and_process_tasks():
     if 'tasks' in st.session_state and st.session_state.tasks:
         tasks_df = pd.DataFrame(st.session_state.tasks)
         tasks_df['due_date'] = tasks_df['due_date'].apply(lambda x: x.strftime('%Y-%m-%d'))
-        tasks_df['priority'] = tasks_df['priority'].map({3: 'High', 2: 'Medium', 1: 'Low'})
+        tasks_df['priority'] = tasks_df['priority'].map({1: 'High', 2: 'Medium', 3: 'Low'})
         st.dataframe(tasks_df, hide_index=True, use_container_width=True)
     else:
         st.write('No tasks added yet.')
