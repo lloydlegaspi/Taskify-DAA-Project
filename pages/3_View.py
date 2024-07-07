@@ -207,8 +207,9 @@ def is_time_slot_free(calendar, start_time, end_time):
 # Function to assign tasks to a calendar based on working hours
 def assign_to_calendar(tasks, working_hours):
     calendar = []
-    current_time = datetime.now().replace(hour=working_hours['start_time'].hour, minute=0, second=0, microsecond=0)
-    end_of_day = current_time.replace(hour=working_hours['end_time'].hour, minute=0, second=0, microsecond=0)
+    # Set current_time to the start of the next working day
+    current_time = datetime.now() + timedelta(days=1)
+    current_time = current_time.replace(hour=working_hours['start_time'].hour, minute=0, second=0, microsecond=0)
 
     sorted_tasks = sort_tasks(tasks)
 
@@ -221,7 +222,7 @@ def assign_to_calendar(tasks, working_hours):
             end_datetime = current_time + duration
             
             # Calculate the end of the working day
-            end_of_working_day = datetime.combine(current_time.date(), working_hours['end_time'].time())
+            end_of_working_day = current_time.replace(hour=working_hours['end_time'].hour, minute=0, second=0, microsecond=0)
             
             # Check if task fits within working hours and time slot is free
             if (working_hours['start_time'].time() <= start_datetime.time() < working_hours['end_time'].time() and
