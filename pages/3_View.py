@@ -161,9 +161,12 @@ def merge(left, right, key):
         if left[i][key] < right[j][key]:
             sorted_list.append(left[i])
             i += 1
-        else:
+        elif left[i][key] > right[j][key]:
             sorted_list.append(right[j])
             j += 1
+        else:
+            sorted_list.append(left[i])
+            i += 1
 
     while i < len(left):
         sorted_list.append(left[i])
