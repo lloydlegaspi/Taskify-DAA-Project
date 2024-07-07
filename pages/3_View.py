@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import ics
 from datetime import datetime, timedelta
+import pytz
 
 # Initialize session state variables if not already initialized
 if 'show_tasks_sections' not in st.session_state:
@@ -126,11 +127,13 @@ def view_and_process_tasks():
 
         if st.button('Export to .ICS'):
             calendar = ics.Calendar()
+            local_timezone = pytz.timezone('Asia/Manila')  # Set to your local timezone
+
             for event in st.session_state.calendar:
                 task_event = ics.Event(
                     name=event[0],
-                    begin=event[1],
-                    end=event[2]
+                    begin=local_timezone.localize(datetime.strptime(event[1], '%Y-%m-%d %H:%M:%S')),
+                    end=local_timezone.localize(datetime.strptime(event[2], '%Y-%m-%d %H:%M:%S'))
                 )
                 calendar.events.add(task_event)
             
