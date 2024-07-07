@@ -207,6 +207,7 @@ def is_time_slot_free(calendar, start_time, end_time):
 # Function to assign tasks to a calendar based on working hours
 def assign_to_calendar(tasks, working_hours):
     calendar = []
+
     # Set current_time to the start of the next working day
     current_time = datetime.now() + timedelta(days=1)
     current_time = current_time.replace(hour=working_hours['start_time'].hour, minute=0, second=0, microsecond=0)
