@@ -194,7 +194,7 @@ st.markdown(
     <div class="boxes-container">
         <div class="row">
             <div class="box">
-                <img src="https://i.imgur.com/vjYJBF9.png" alt="Box 1 Image">
+                <img src="https://i.imgur.com/3Bn2SUd.png" alt="Box 1 Image">
                 <div class="box-content">
                     <h3>Time Management</h3>
                     <p>Allocate tasks within specified working hours to optimize scheduling and minimize overtime.</p>
@@ -217,7 +217,7 @@ st.markdown(
                 </div>
             </div>
             <div class="box">
-                <img src="https://i.imgur.com/3Bn2SUd.png" alt="Box 4 Image">
+                <img src="https://i.imgur.com/vjYJBF9.png" alt="Box 4 Image">
                 <div class="box-content">
                     <h3>ICS Integration</h3>
                     <p>Seamlessly exported as ics and can integrate with existing calendars to streamline task assignment and monitoring.</p>
