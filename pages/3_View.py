@@ -131,8 +131,10 @@ def view_and_process_tasks():
             container.title('Scheduled Calendar')
             calendar_df = pd.DataFrame(st.session_state.calendar, columns=['Task Name', 'Start Time', 'End Time']) # Create DataFrame
             calendar_df['Start Time'] = pd.to_datetime(calendar_df['Start Time']) # Convert to datetime format
+            calendar_df['End Time'] = pd.to_datetime(calendar_df['End Time']) # Convert to datetime format
             # calendar_df = calendar_df.sort_values(by='Start Time', ascending=True) # Sort by start time
             calendar_df['Start Time'] = calendar_df['Start Time'].dt.strftime('%Y-%m-%d %I:%M %p') # Format start time
+            calendar_df['End Time'] = calendar_df['End Time'].dt.strftime('%Y-%m-%d %I:%M %p') # Format end time
             container.dataframe(calendar_df, hide_index=True, use_container_width=True) # Display calendar in DataFrame
 
         if st.button('Export to .ICS'):
