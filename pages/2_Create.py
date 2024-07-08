@@ -106,39 +106,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Function to assign tasks to calendar
-def assign_to_calendar(tasks, working_hours):
-    calendar = []
-    current_date = datetime.datetime.today()
-    current_time = working_hours['start_time'].time()
-    end_time = working_hours['end_time'].time()
-    
-    for task in tasks:
-        duration = timedelta(hours=task['duration'])
-        while duration > timedelta(0):
-            start_datetime = datetime.datetime.combine(current_date, current_time)
-            end_datetime = datetime.datetime.combine(current_date, end_time)
-            if start_datetime + duration > end_datetime:
-                part_duration = end_datetime - start_datetime
-                calendar.append((task['task_name'], start_datetime, end_datetime))
-                duration -= part_duration
-                current_date += timedelta(days=1)
-                current_time = working_hours['start_time'].time()
-            else:
-                calendar.append((task['task_name'], start_datetime, start_datetime + duration))
-                current_time = (start_datetime + duration).time()
-                duration = timedelta(0)
-
-    return calendar
-
 # Session state initialization
-if 'tasks' not in st.session_state:
-    st.session_state.tasks = []
+if 'tasks' not in st.session_state: 
+    st.session_state.tasks = [] # List to store tasks
 
-if 'working_hours' not in st.session_state:
+if 'working_hours' not in st.session_state: # Dictionary to store working hours
     st.session_state.working_hours = {
-        'start_time': datetime.datetime.now().replace(hour=9, minute=0), 
-        'end_time': datetime.datetime.now().replace(hour=17, minute=0)
+        'start_time': datetime.datetime.now().replace(hour=9, minute=0), # Default start time is 9:00 AM
+        'end_time': datetime.datetime.now().replace(hour=17, minute=0) # Default end time is 5:00 PM
     }
 
 # Function to render Set Working Hours
@@ -147,7 +122,7 @@ def set_working_hours():
 
     col1, col2 = st.columns(2)
 
-    with col1:
+    with col1: 
         start_time = st.time_input('Start Time', value=st.session_state.working_hours['start_time'].time())
 
     with col2:
@@ -187,7 +162,7 @@ def add_tasks():
     priority = container.selectbox('Priority Level', ['High', 'Medium', 'Low'], key='priority')
     duration = container.number_input('Duration (hours)', min_value=0.5, max_value=24.0, step=0.5, key='duration')
 
-    priority_map = {'High': 1, 'Medium': 2, 'Low': 3}
+    priority_map = {'High': 1, 'Medium': 2, 'Low': 3} # Map priority levels to integers
 
     if container.button('Add Task'):
         if not task_name or not due_date or not priority or not duration:
@@ -212,7 +187,7 @@ if st.session_state.get('show_tasks_sections', False):
 
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = st.columns([1, 1, 1, 0.25, 0.7, 0.1, 1, 1, 1])
     with col5:
-        if st.button('VIEW TASKS', type = "primary"):
+        if st.button('SUBMIT TASKS', type = "primary"): 
             st.session_state.navigate_to_view = True
             st.rerun()
             
