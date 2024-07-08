@@ -180,15 +180,14 @@ def add_tasks():
 # Main layout
 set_working_hours()
 
-# Display tasks only if 'show_tasks_sections' is True
-if st.session_state.get('show_tasks_sections', False):
-    
+if st.session_state.get('show_tasks_sections', False): # Display tasks only if 'show_tasks_sections' is True
     add_tasks()
 
     col1, col2, col3, col4, col5, col6, col7, col8, col9 = st.columns([1, 1, 1, 0.25, 0.7, 0.1, 1, 1, 1])
     with col5:
         if st.button('SUBMIT TASKS', type = "primary"): 
             st.session_state.navigate_to_view = True
+            st.success('Tasks submitted successfully!')
             st.rerun()
             
 # Function to render footer
