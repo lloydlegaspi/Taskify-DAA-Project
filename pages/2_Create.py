@@ -188,8 +188,7 @@ if st.session_state.get('show_tasks_sections', False): # Display tasks only if '
         if st.button('SUBMIT TASKS', type = "primary"): 
             st.session_state.navigate_to_view = True
             st.success('Tasks submitted successfully!')
-            st.rerun()
-            
+
 # Function to render footer
 def render_footer():
     st.markdown("""
