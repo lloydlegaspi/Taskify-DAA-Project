@@ -186,7 +186,7 @@ st.markdown(
 <div class="fade-in-image">
     <div class="developer-container">
         <div class="developer">
-            <img src="https://github.com/lloydlegaspi/Taskify-DAA-Project/blob/main/public/img/chynna.jpg" alt="1" border="0"></a>
+            <img src="https://imgur.com/4UUP3Fx.png" alt="1" border="0"></a>
             <div class="developer-name">Chynna Mae Doria</div>
             <div class="social-icons">
                 <a href="https://github.com/chynnadoria"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
@@ -204,7 +204,7 @@ st.markdown(
             </div>
         </div>
         <div class="developer">
-            <img src="https://github.com/lloydlegaspi/Taskify-DAA-Project/blob/main/public/img/paul.jpg" alt="3" border="0"></a>
+            <img src="https://imgur.com/c728neH.png" alt="3" border="0"></a>
             <div class="developer-name">Paul Angelo Macaraeg</div>
             <div class="social-icons">
                 <a href="https://github.com/PaullyMac"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
