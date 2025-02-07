@@ -186,7 +186,7 @@ st.markdown(
 <div class="fade-in-image">
     <div class="developer-container">
         <div class="developer">
-            <img src="https://media.licdn.com/dms/image/D4D03AQFlFJ6YQ2evag/profile-displayphoto-shrink_800_800/0/1665669739215?e=1724284800&v=beta&t=w45CKemDEDz0fOy9ZKeFroRaAq7zatKYkyXXKH2byso" alt="1" border="0"></a>
+            <img src="https://github.com/lloydlegaspi/Taskify-DAA-Project/blob/main/public/img/chynna.png" alt="1" border="0"></a>
             <div class="developer-name">Chynna Mae Doria</div>
             <div class="social-icons">
                 <a href="https://github.com/chynnadoria"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
@@ -204,7 +204,7 @@ st.markdown(
             </div>
         </div>
         <div class="developer">
-            <img src="https://media.licdn.com/dms/image/C5603AQHQZj9jE8HzTw/profile-displayphoto-shrink_800_800/0/1654068082787?e=1724284800&v=beta&t=lw6lEFRS-eiLwTKMGhoqbJNKrERzzbbQ43zenDRRc74" alt="3" border="0"></a>
+            <img src="https://github.com/lloydlegaspi/Taskify-DAA-Project/blob/main/public/img/paul.png" alt="3" border="0"></a>
             <div class="developer-name">Paul Angelo Macaraeg</div>
             <div class="social-icons">
                 <a href="https://github.com/PaullyMac"><img src="https://i.imgur.com/np4sHml.png" alt="github" border="0"></a>
