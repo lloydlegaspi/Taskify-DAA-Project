@@ -1,4 +1,4 @@
-### Taskify: Streamlined Task Scheduling and Calendar Integration
+# Taskify 🗓️
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg) ![Python Version](https://img.shields.io/badge/python-3.8%2B-yellowgreen.svg)
 ---
 
@@ -34,12 +34,12 @@ Taskify is a task scheduling tool that optimizes user task scheduling efficiency
 - **Task Splitting**: Automatically splits tasks across multiple available time slots if they exceed working hour
 
 ## Screenshots
-![Home Page](public\img\Home-Page.png)
-![Create Page](public\img\Create-Page-1.png)
-![Create Page](public\img\Create-Page-2.png)
-![View Page](public\img\View-Page-1.png)
-![View Page](public\img\View-Page-2.png)
-![Sample Result](public\img\Sample-Result.png)
+![Home Page](public/img/Home-Page.png)
+![Create Page](public/img/Create-Page-1.png)
+![Create Page](public/img/Create-Page-2.png)
+![View Page](public/img/View-Page-1.png)
+![View Page](public/img/View-Page-2.png)
+![Sample Result](public/img/Sample-Result.png)
 
 ## Tech Stack
 - Frontend: Streamlit for UI development
