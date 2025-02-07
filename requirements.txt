@@ -1,0 +1,17 @@
+# Core Framework
+streamlit>=1.31.0
+
+# Data Manipulation
+pandas>=2.1.0
+numpy>=1.24.0
+
+# Date/Time Handling
+pytz>=2023.3
+python-dateutil>=2.8.2
+
+# Calendar Integration
+ics>=0.7.2
+icalendar>=5.0.0
+
+# Additional Dependencies
+Pillow>=10.0.0  # For image processing

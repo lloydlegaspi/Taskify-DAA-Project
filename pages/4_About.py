@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 Horizontal_Logo = "https://i.imgur.com/5byQTAD.png"
-Logo = "https://i.imgur.com/D65dp0H.png" ## Optional, use as logo
+Logo = "https://i.imgur.com/D65dp0H.png"
 
 st.logo(Horizontal_Logo, icon_image=Horizontal_Logo)
 
