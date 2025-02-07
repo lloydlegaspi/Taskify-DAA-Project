@@ -21,7 +21,7 @@ A task scheduling application developed in partial fulfillment of the course **C
 Taskify is a task scheduling tool that optimizes user task scheduling efficiency by implementing the Merge Sort algorithm for effective task prioritization. The application provides a user-friendly interface for managing tasks, setting working hours, and exporting schedules to calendar applications.
 
 ## Live Site
-🔗 [View Live Site]()
+🔗 [View Live Site](https://taskify-daa.streamlit.app/)
 
 ## Features
 
